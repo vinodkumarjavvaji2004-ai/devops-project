@@ -8,7 +8,7 @@ function App() {
   const [failure, setFailure] = useState(0);
 
   const loadData = () => {
-    fetch("http://localhost:5000/data")
+    fetch("https://devops-backend-n889.onrender.com/data")
       .then(res => res.json())
       .then(data => {
         setSuccess(data.success);
